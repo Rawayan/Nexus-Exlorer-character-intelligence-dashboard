@@ -209,13 +209,14 @@ a {
 .sidebar-brand h1 {
   font-size: var(--font-brand-size);
   font-weight: var(--font-brand-weight);
+  color: #ffffff;
 }
 
 .sidebar-brand span {
   display: block;
   margin-top: 3px;
 
-  color: #94a3b8;
+  color: var(--color-text-muted);
   font-size: 11px;
 }
 
@@ -234,7 +235,7 @@ a {
 
   border-radius: var(--radius-control);
 
-  color: #cbd5e1;
+  color: var(--color-text-muted);
 
   font-size: var(--font-nav-size);
   font-weight: var(--font-nav-weight);
@@ -246,7 +247,7 @@ a {
 
 .nav-link:hover {
   background:
-#172033;
+var(--color-sidebar-raised);
   color: #ffffff;
 }
 
@@ -991,8 +992,8 @@ padding: 10px;
   background:
     linear-gradient(
       135deg,
-      #e0e7ff,
-      #cffafe
+      var(--color-media-start),
+      var(--color-media-end)
     );
 }
 
@@ -1035,18 +1036,18 @@ padding: 10px;
 }
 
 .status-alive {
-  background: #d1fae5;
-  color: #047857;
+  background: var(--color-alive-bg);
+  color: var(--color-alive);
 }
 
 .status-dead {
-  background: #fee2e2;
-  color: #b91c1c;
+  background: var(--color-dead-bg);
+  color: var(--color-dead);
 }
 
 .status-unknown {
-  background: #e2e8f0;
-  color: #475569;
+  background: var(--color-unknown-bg);
+  color: var(--color-unknown);
 }
 
 .character-details-link {
@@ -1768,13 +1769,14 @@ margin-top: 24px;
 .settings-section {
   margin-top: 24px;
   padding: 24px;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--color-border);
   border-radius: 16px;
-  background: var(--surface-color);
+  background: var(--color-surface);
 }
 
 .settings-section h2 {
   margin: 0 0 20px;
+  color: var(--color-text-primary);
 }
 
 .settings-row {
@@ -1783,7 +1785,7 @@ margin-top: 24px;
   justify-content: space-between;
   gap: 20px;
   padding: 18px 0;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .settings-row:last-child {
@@ -1792,26 +1794,28 @@ margin-top: 24px;
 
 .settings-row h3 {
   margin: 0 0 6px;
+  color: var(--color-text-primary);
 }
 
 .settings-row p {
   margin: 0;
-  opacity: 0.75;
+  color: var(--color-text-muted);
 }
 
 .settings-row select {
   min-width: 160px;
   padding: 10px 12px;
   border-radius: 8px;
-  border: 1px solid var(--border-color);
-  background: var(--background-color);
-  color: inherit;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text-primary);
 }
 
 .settings-row label {
   display: flex;
   align-items: center;
   gap: 8px;
+  color: var(--color-text-primary);
 }
 
 .settings-actions {
@@ -1826,18 +1830,27 @@ margin-top: 24px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.settings-actions button:hover,
+.settings-row button:hover {
+  filter: brightness(0.94);
 }
 
 .success-state {
   margin-top: 20px;
   padding: 12px 16px;
   border-radius: 8px;
+  background: var(--color-alive-bg);
+  color: var(--color-alive);
 }
 
 .inline-error {
   margin: 0;
   font-size: 13px;
-  color: #dc2626;
+  color: var(--color-danger);
 }
 
 

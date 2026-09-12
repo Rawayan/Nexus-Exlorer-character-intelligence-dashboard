@@ -1,5 +1,4 @@
 import ThemeToggle from "../ui/ThemeToggle";
-import CrashTest from "../error/CrashTest";
 
 function Topbar() {
   return (
@@ -14,22 +13,6 @@ function Topbar() {
 
       <div className="topbar-actions">
         <ThemeToggle />
-
-        <CrashTest />
-
-        <button
-          type="button"
-          className="topbar-button"
-        >
-          Search
-        </button>
-
-        <button
-          type="button"
-          className="topbar-button"
-        >
-          Theme
-        </button>
       </div>
     </header>
   );
