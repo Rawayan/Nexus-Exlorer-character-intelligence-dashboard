@@ -5,6 +5,10 @@ Nexus Explorer is a React-based Character Intelligence Dashboard built with Reac
 The application allows users to explore characters, view character details, browse episodes and locations, maintain a persistent watchlist, compare characters, switch between light and dark themes, and observe React Query caching and context-performance behaviour.
 
 ---
+## Live Link
+https://character-intelligence-dashboard.netlify.app/
+
+
 
 ## Features
 
